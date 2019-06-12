@@ -1,0 +1,49 @@
+/*Concept*/
+.ellipse-3 {
+    width: 15%;
+    right: -1.5rem;
+    top: 4rem;
+}
+
+.ellipse-4 {
+    width: 30%;
+    top: 10rem;
+    left: 2.5rem;
+}
+
+.mg-concept {
+    margin-top: 3rem;
+    margin-bottom: 4rem;
+    position: relative;
+}
+    .mg-concept__title {
+        font-size: 1.25rem;
+        margin-bottom: 1.5rem;
+
+        @media (min-width: 576px) and (max-width: 768px) {
+            font-size: $fontSizeBigTitle;
+        }
+    }
+
+    .mg-concept__subtitle {
+        @media (min-width: 576px) and (max-width: 768px) {
+            font-size: $fontSizeXl;
+        }
+    }
+
+    .mg-concept__video {
+        width: 100%;
+        position: relative;
+        bottom: 2rem;
+        z-index: -1;
+    }
+
+        .mg-concept__steps {
+            position: relative;
+            top: -3rem;
+
+            @media (min-width: 576px) and (max-width: 768px) {
+                font-size: $fontSizeXl;
+            }
+        }
+

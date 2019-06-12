@@ -1,0 +1,107 @@
+/*Newsletter*/
+.ellipse-5 {
+    z-index: -1;
+    width: 30%;
+    right: 0;
+    top: -4rem;
+    left: 0;
+    margin: 0 auto;
+}
+
+.ellipse-6 {
+    width: 15%;
+    bottom: -2rem;
+    right: -1.5rem;
+}
+
+.mg-newsletter {
+    width: 100%;
+    height: 13rem;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 9rem;
+    background-image: url("../media/newsletter.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    color: #fff;
+
+    @media (min-width: 576px) and (max-width: 768px) {
+        padding-top: 3rem;
+        height: 30rem;
+    }
+}
+
+    .mg-newsletter__title {
+        font-size: $fontSizeXl;
+
+        @media (min-width: 576px) and (max-width: 768px) {
+            font-size: $fontSizeBigTitle;
+        }
+    }
+
+    .mg-newsletter__subtitle {
+        @media (min-width: 576px) and (max-width: 768px) {
+            font-size: $fontSizeXl;
+        }
+    }
+
+    .mg-newsletter__subscription {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
+        width: 90%;
+        height: 10rem;
+        margin: 0 auto;
+        background: #fff;
+        padding: 1rem 0.5rem;
+        position: relative;
+        top: 5.5rem;
+        box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.45);
+
+        @media (min-width: 576px) and (max-width: 768px) {
+            top: 13.5rem;
+        }
+    }
+
+        .mg-newsletter__subscription__email {
+            width: 90%;
+            height: 3rem;
+            padding-left: 1rem;
+            border: 1px solid;
+        }
+
+        .mg-newsletter__subscription__submit {
+            display: block;
+            color: $white;
+            background: $black;
+            border: none;
+            width: 90%;
+            height: 3rem;
+            padding: 0 1rem;
+        }
+
+    .mg-socials {
+        position: relative;
+    }
+
+        .mg-socials__title {
+            @media (min-width: 576px) and (max-width: 768px) {
+                font-size: $fontSizeXl;
+            } 
+        }
+
+        .mg-socials__icons {
+            display: flex;
+            justify-content: space-around;
+            margin: 2rem 0;
+        }
+
+            .mg-socials__icons__item {
+                width: 10%;
+
+                img {
+                    width: 100%;
+                }
+            }

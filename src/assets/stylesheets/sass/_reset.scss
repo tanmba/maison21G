@@ -1,12 +1,31 @@
+html,
+body {
+	overflow-x: hidden; 
+}
+
 body,h1,h2,h3,h4,h5,h6,p {
 	margin: 0;
 	padding: 0;
 }
 
 body {
-	font-family: $fontStackBody;
+	font-family: $fontBody ;
+	font-size: $fontSizeBase;
+	text-align: center;
 }
 
-h1,h2,h3,h4,h5,h6 {
-	font-family: $fontStackHeadings;
+h1 {
+	font-size: $fontSizeTitle;
+	margin-bottom: 1.5rem;
+	text-align: center;
+
+	@media (min-width: 576px) and (max-width: 992px) {
+		font-size: $fontSizeBigTitle;
+		margin-bottom: 4.5rem;
+	}
+
+	@media (min-width: 992px) {
+		font-size: $fontSizeBigTitle;
+		margin-bottom: 4.5rem;
+	}
 }

@@ -1,6 +1,22 @@
-@import url('https://fonts.googleapis.com/css?family=Bitter:400,400i,700');
+@font-face {
+    font-family: "Open Sans";
+    src: url("../fonts/Grodna-Demo.otf") format("otf"),
+        url("../fonts/OpenSans-Regular.ttf") format("ttf"),
+        url("../fonts/OpenSans-ExtraBold.ttf") format("ttf"),
+        url("../fonts/OpenSans-Bold.ttf") format("ttf");
+   }
 
-$fontStackHeadings: Helvetica, Arial, sans-serif;
-$fontStackBody: 'Bitter', serif;
+$fontHeading       : 'Grodna Demo';
+$fontBody          : 'Open Sans ExtraBold', sans-serif;
+$fontSizeTitle     : 1.25rem;
+$fontSizeBigTitle  : 3.25rem;
+$fontSizeBase      : 1rem;
+$fontSizeL         : 1.5rem;
+$fontSizeXl        : 2rem;
+$fontSizeXXl       : 2.5rem;
 
-$primaryColor: hsl(210, 50%, 50%);
+$grey              : #9E9E9E;
+$black             : #000;
+$white             : #fff;
+
+$navbar-height     : 3.3rem;

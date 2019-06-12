@@ -15,38 +15,101 @@
 
 </head>
 <body>
-	<header class="mg-header">
-	</header>
-	<div class="container-fluid mg-container">
-		<nav class="navbar navbar-default">
-			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#primaryNav" aria-expanded="false">
-				<i class="fa fa-bars"></i><span class="sr-only">Toggle menu</span>
-			</button>
-			<div class="collapse navbar-collapse" id="primaryNav">
-				<ul class="nav navbar-nav">
-					<li><a href="#">Link 1</a></li>
-					<li><a href="#">Link 2</a></li>
-					<li><a href="#">Link 3</a></li>
-					<li><a href="#">Link 4</a></li>
-				</ul>
-				<form class="navbar-form navbar-right" role="application">
-					<div class="form-group">
-						<div class="input-group">
-							<span class="input-group-addon" id="username"><i class="fa fa-user"></i><span class="sr-only">Username</span></span>
-							<input type="text" class="form-control" placeholder="Username" aria-describedby="username">
-						</div>
-					</div>
-					<div class="form-group">
-						<div class="input-group">
-							<span class="input-group-addon" id="password"><i class="fa fa-lock"></i><span class="sr-only">Password</span></span>
-							<input type="password" class="form-control" placeholder="Password" aria-describedby="password">
-						</div>
-					</div>
-					<button class="btn btn-success"><i class="fa fa-sign-in"></i> Sign in</button>
-					<p><small><a href="#">I forgot my password</a> | <a href="#">Sign up</a></small></p>
-				</form>
+	<div class="mg-container">
+		<div class="mg-header">
+			<div class="mg-logo">
+				<div class="mg-logo__img">
+					<img src="assets/media/logo.png" alt="Logo Maison 21 G">
+				</div>
+				<p class="mg-logo__title">The scent of your soul</p>
 			</div>
-		</nav>
+			<div id="countdown" class="mg-countdown"></div>
+		</div>
+
+		<div class="mg-description">
+			<img class="ellipse ellipse-1" src="assets/media/Ellipse.png" alt="Maison 21 G">
+			<img class=" ellipse ellipse-2" src="assets/media/Ellipse.png" alt="Maison 21 G">
+			<h1 class="mg-description__title">Maison 21G, une maison d’exception</h1>
+			<div class="mg-description__text">
+				Des parfums sur-mesure et une expérience unique. 
+				Des ingrédients naturels d’exception, référencées parmi les meilleurs « nez » en la 
+				matière.
+				<img class="arrow" src="assets/media/Path.png" alt="Maison 21 G">
+			</div>
+			<img class="mg-description__img" src="assets/media/lab.jpg" alt="Maison 21 G">
+		</div>
+
+		<div class="mg-description__steps">
+			<div class="mg-description__steps__item mg-description__steps__one">
+				Grâce à une expérience interactive, vous découvrirez les fragrances qui sont faites pour vous.
+			</div>
+			<div class="mg-description__steps__item mg-description__steps__two">
+				Créez votre parfum à partir de celui que vous portez ou de vos essences favorites.
+			</div>
+		</div>
+
+		<div class="mg-concept">
+			<img class="ellipse ellipse-3" src="assets/media/Ellipse.png" alt="Maison 21 G">
+			<img class=" ellipse ellipse-4" src="assets/media/Ellipse.png" alt="Maison 21 G">
+			<span class="mg-concept__title">Le concept</span><br/>
+			<span class="mg-concept__subtitle">En 3 étapes, devenez créateur de parfums</span>
+			<video class="mg-concept__video" autoplay="autoplay" loop muted>
+				<source src="assets/media/parfum.mp4" type="video/mp4">
+			</video>
+			<div id="demo" class="carousel slide mg-concept__steps" data-ride="carousel">
+				<div class="carousel-inner">
+					<div class="carousel-item active mg-concept__steps__one">Étape 1 : Sélectionnez vos combinaisons</div>
+					<div class="carousel-item mg-concept__steps__two">Étape 2 : Clipsez les capsules sur le flacon</div>
+					<div class="carousel-item mg-concept__steps__three">Étape 3 : Secouez, votre création est prête !</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="mg-newsletter">
+			<span class="mg-newsletter__title">Restez connecté !</span>
+			<span class="mg-newsletter__subtitle">soyez informé de la mise en ligne du site</span>
+			<form class="mg-newsletter__subscription">
+				<input class="mg-newsletter__subscription__email" type="text" placeholder="Entrez votre adresse email ...">
+				<input class="mg-newsletter__subscription__submit" type="submit" value="S'inscrire">
+			</form>
+		</div>
+
+		<div class="mg-socials">
+			<img class="ellipse ellipse-5" src="assets/media/Ellipse.png" alt="Maison 21 G">
+			<img class=" ellipse ellipse-6" src="assets/media/Ellipse.png" alt="Maison 21 G">
+			<span class="mg-socials__title">Suivez-nous sur les réseaux sociaux</span>
+			<div class="mg-socials__icons">
+				<div class="mg-socials__icons__item"><img src="assets/media/instagram.png" alt="Maison 21 G"></div>
+				<div class="mg-socials__icons__item"><img src="assets/media/facebook.png" alt="Maison 21 G"></div>
+				<div class="mg-socials__icons__item"><img src="assets/media/twitter.png" alt="Maison 21 G"></div>
+				<div class="mg-socials__icons__item"><img src="assets/media/pinterest.png" alt="Maison 21 G"></div>
+			</div>
+		</div>
 	</div>
+
+	<script>
+		// Set the date we're counting down to
+		var countDownDate = new Date("Jan 5, 2021 15:37:25").getTime();
+
+		// Update the count down every 1 second
+		var x = setInterval(function() {
+
+			// Get today's date and time
+			var now = new Date().getTime();
+				
+			// Find the distance between now and the count down date
+			var distance = countDownDate - now;
+				
+			// Time calculations for days, hours, minutes and seconds
+			var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+			var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+			var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+			var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+				
+			// Output the result in an element with id="demo"
+			document.getElementById("countdown").innerHTML = days + "d " + hours + "h "
+			+ minutes + "m " + seconds + "s ";
+		}, 1000);
+</script>
 </body>
 </html>
